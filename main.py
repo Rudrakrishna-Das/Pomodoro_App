@@ -42,6 +42,7 @@ def start_time():
     
     
     if  REPS % 8 == 0:
+        window.deiconify()
         LEVEL += 1
         check_label.config(text=f"{LEVEL * '✔'}")
         TOTAL_WORKING += WORK_MIN
@@ -55,6 +56,7 @@ def start_time():
         count_time(LONG_BREAK_MIN * SECOND)
         timer_label.config(text='Break',fg=RED)
     elif REPS % 2 == 0:
+        window.deiconify()
         LEVEL += 1
         check_label.config(text=f"{LEVEL * '✔'}")
         TOTAL_WORKING += WORK_MIN
